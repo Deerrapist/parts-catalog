@@ -1,0 +1,17 @@
+# бинарники сборки
+/backend/server
+/backend/bin/
+
+# секреты и локальные настройки
+.env
+*.env
+!.env.example
+
+# данные БД, если volume окажется в проекте
+/deploy/pgdata/
+
+# мусор редакторов и ОС
+.vscode/
+.idea/
+*.swp
+.DS_Store
