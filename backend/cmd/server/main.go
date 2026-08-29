@@ -8,6 +8,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 )
@@ -57,6 +58,11 @@ func main() {
 	r.Use(gin.Recovery())
 	r.GET("/health", healthHandler)
 	r.GET("/api/v1/parts", listPartsHandler)
+
+	// Ветка 2: та же выгрузка со сжатием.
+	gz := r.Group("/api/v1/gz")
+	gz.Use(gzip.Gzip(gzip.DefaultCompression))
+	gz.GET("/parts", listPartsHandler)
 
 	port := os.Getenv("APP_PORT")
 	if port == "" {
