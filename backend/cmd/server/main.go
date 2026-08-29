@@ -53,7 +53,8 @@ func main() {
 	}
 	log.Println("database connected")
 
-	r := gin.Default()
+	r := gin.New()
+	r.Use(gin.Recovery())
 	r.GET("/health", healthHandler)
 	r.GET("/api/v1/parts", listPartsHandler)
 
