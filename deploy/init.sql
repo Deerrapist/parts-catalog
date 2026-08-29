@@ -52,3 +52,4 @@ FROM categories c WHERE c.name = 'Крепёж';
 INSERT INTO parts (category_id, name, article, size, material, weight_g, description)
 SELECT c.id, 'Подшипник 6204', 'BRG-6204', '20x47x14', 'ШХ15', 106, 'Радиальный шариковый однорядный'
 FROM categories c WHERE c.name = 'Подшипники';
+CREATE EXTENSION IF NOT EXISTS pg_stat_statements;
