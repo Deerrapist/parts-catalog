@@ -1,0 +1,42 @@
+=== 50K delta 5% прогон 1 ===
+Running 30s test @ http://localhost:8080/api/v1/parts/delta?since_version=432832
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    57.80ms   20.93ms 172.40ms   67.75%
+    Req/Sec    86.68     14.33   150.00     73.00%
+  Latency Distribution
+     50%   54.86ms
+     75%   71.32ms
+     90%   86.89ms
+     99%  113.54ms
+  5198 requests in 30.05s, 6.04GB read
+Requests/sec:    172.96
+Transfer/sec:    205.78MB
+=== 50K delta 5% прогон 2 ===
+Running 30s test @ http://localhost:8080/api/v1/parts/delta?since_version=432832
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    56.33ms   20.56ms 152.04ms   67.43%
+    Req/Sec    89.00     13.84   131.00     74.00%
+  Latency Distribution
+     50%   53.13ms
+     75%   70.16ms
+     90%   84.09ms
+     99%  113.67ms
+  5338 requests in 30.07s, 6.20GB read
+Requests/sec:    177.52
+Transfer/sec:    211.21MB
+=== 50K delta 5% прогон 3 ===
+Running 30s test @ http://localhost:8080/api/v1/parts/delta?since_version=432832
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    58.09ms   23.00ms 272.69ms   71.34%
+    Req/Sec    86.88     15.99   131.00     69.67%
+  Latency Distribution
+     50%   54.55ms
+     75%   70.40ms
+     90%   87.31ms
+     99%  123.21ms
+  5211 requests in 30.08s, 6.06GB read
+Requests/sec:    173.21
+Transfer/sec:    206.11MB
