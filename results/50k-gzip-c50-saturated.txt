@@ -1,0 +1,28 @@
+=== 50K gzip -c50 прогон 1 ===
+Running 30s test @ http://localhost:8080/api/v1/gz/parts
+  4 threads and 50 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    22.03s     3.91s   27.28s    70.00%
+    Req/Sec     0.60      1.58     5.00     90.00%
+  Latency Distribution
+     50%   22.09s 
+     75%   25.23s 
+     90%   27.28s 
+     99%   27.28s 
+  10 requests in 30.31s, 34.65MB read
+Requests/sec:      0.33
+Transfer/sec:      1.14MB
+=== 50K gzip -c50 прогон 2 ===
+Running 30s test @ http://localhost:8080/api/v1/gz/parts
+  4 threads and 50 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec     0.00      0.00     0.00      -nan%
+  Latency Distribution
+     50%    0.00us
+     75%    0.00us
+     90%    0.00us
+     99%    0.00us
+  0 requests in 30.76s, 0.00B read
+Requests/sec:      0.00
+Transfer/sec:       0.00B

@@ -1,0 +1,11 @@
+                                                           QUERY PLAN                                                            
+---------------------------------------------------------------------------------------------------------------------------------
+ Index Scan using idx_parts_version on parts  (cost=0.29..40.57 rows=416 width=343) (actual time=0.099..1.522 rows=2500 loops=1)
+   Index Cond: (version > 100502)
+   Buffers: shared hit=144
+ Planning:
+   Buffers: shared hit=188
+ Planning Time: 2.340 ms
+ Execution Time: 1.722 ms
+(7 rows)
+

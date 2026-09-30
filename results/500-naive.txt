@@ -1,0 +1,42 @@
+=== 500 naive прогон 1 ===
+Running 30s test @ http://localhost:8080/api/v1/parts
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    17.15ms    9.97ms  63.36ms   66.04%
+    Req/Sec   298.68     35.06   404.00     66.67%
+  Latency Distribution
+     50%   14.59ms
+     75%   24.17ms
+     90%   31.89ms
+     99%   42.82ms
+  17855 requests in 30.02s, 4.04GB read
+Requests/sec:    594.69
+Transfer/sec:    137.81MB
+=== 500 naive прогон 2 ===
+Running 30s test @ http://localhost:8080/api/v1/parts
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    16.78ms    9.70ms  72.72ms   66.41%
+    Req/Sec   305.19     38.16   440.00     74.33%
+  Latency Distribution
+     50%   14.35ms
+     75%   23.60ms
+     90%   31.08ms
+     99%   41.63ms
+  18250 requests in 30.03s, 4.13GB read
+Requests/sec:    607.82
+Transfer/sec:    140.85MB
+=== 500 naive прогон 3 ===
+Running 30s test @ http://localhost:8080/api/v1/parts
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    16.89ms    9.91ms  61.24ms   66.57%
+    Req/Sec   303.70     38.68   420.00     66.83%
+  Latency Distribution
+     50%   14.31ms
+     75%   23.98ms
+     90%   31.19ms
+     99%   42.93ms
+  18156 requests in 30.03s, 4.11GB read
+Requests/sec:    604.67
+Transfer/sec:    140.12MB

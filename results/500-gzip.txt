@@ -1,0 +1,42 @@
+=== 500 gzip прогон 1 ===
+Running 30s test @ http://localhost:8080/api/v1/gz/parts
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    17.31ms   10.02ms  65.06ms   68.23%
+    Req/Sec   296.01     33.53   393.00     62.67%
+  Latency Distribution
+     50%   13.65ms
+     75%   24.96ms
+     90%   32.26ms
+     99%   43.21ms
+  17698 requests in 30.04s, 462.56MB read
+Requests/sec:    589.20
+Transfer/sec:     15.40MB
+=== 500 gzip прогон 2 ===
+Running 30s test @ http://localhost:8080/api/v1/gz/parts
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    17.34ms   10.06ms  69.86ms   67.74%
+    Req/Sec   295.90     37.23   414.00     75.17%
+  Latency Distribution
+     50%   13.96ms
+     75%   24.76ms
+     90%   32.17ms
+     99%   44.25ms
+  17690 requests in 30.03s, 462.34MB read
+Requests/sec:    589.15
+Transfer/sec:     15.40MB
+=== 500 gzip прогон 3 ===
+Running 30s test @ http://localhost:8080/api/v1/gz/parts
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    17.26ms   10.05ms  58.78ms   67.87%
+    Req/Sec   297.46     32.94   430.00     66.83%
+  Latency Distribution
+     50%   14.01ms
+     75%   24.49ms
+     90%   32.18ms
+     99%   43.59ms
+  17783 requests in 30.03s, 464.77MB read
+Requests/sec:    592.19
+Transfer/sec:     15.48MB
